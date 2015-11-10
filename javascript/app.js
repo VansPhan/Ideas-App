@@ -1,1 +1,1 @@
-var app = angular.module('ideasApp', ['ngroute']);
+angular.module('Ideas', ['ngroute']);
