@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+form {
+	width: 400px;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.navbar-header img {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.failLoginMsg, .inactiveUserMsg {
+	display: table;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px dotted black;
+}
+
+.failLoginMsg a, .inactiveUserMsg a {
+	margin-left: 20px;
+	float: right;
+}
+
+.login {
+	display: table-cell;
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+	border: 1px solid black;
+	padding: 100px;
+}
+
+.register {
+	display: table-cell;
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+	border: 1px solid black;
+	padding: 100px;
+}
+
+
+
