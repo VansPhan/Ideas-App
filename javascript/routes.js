@@ -12,4 +12,5 @@ angular.module('ideasApp')
 	.when('/', {
 		templateUrl: '/templates/pages/login/index.html'
 	})
+	.otherwise( {redirectTo: '/' });
 });
