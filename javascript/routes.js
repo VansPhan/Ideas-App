@@ -1,6 +1,5 @@
 angular.module('Ideas')
 .config(function($routeProvider, $locationProvider) {
-	$locationProvider.html5Mode(true);
 	$routeProvider.when('/login', {
 		templateUrl: '/templates/pages/login/index.html'
 	})
