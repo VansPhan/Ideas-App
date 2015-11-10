@@ -9,6 +9,15 @@ form {
 	width: 400px;
 }
 
+body {
+	padding-top: 70px;
+}
+
+.navbar-header img {
+	width: 50%;
+	margin: 0 auto;
+}
+
 .failLoginMsg, .inactiveUserMsg {
 	display: table;
     margin: 0 auto;
