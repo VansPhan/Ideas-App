@@ -1,6 +1,6 @@
 angular.module('ideasApp')
 .config(function($routeProvider){
-	$routeProvider.when('/', {
+	$routeProvider.when('/home', {
 		templateUrl: '/templates/pages/login/index.html'
 	})
 });
