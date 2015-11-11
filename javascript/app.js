@@ -1,1 +1,1 @@
-angular.module('Ideas', ['ngroute']);
+angular.module('ideas', ['ngRoute']);
