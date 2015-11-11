@@ -1,13 +1,23 @@
-<div class="announcement"> {{ announcement.message }} </div>
+<div class="jumbotron">
+    <h1>Announcement</h1> 
+    <section ng-init="tab = 0">
+      <ol class="breadcrumb">
+        <li><a href ng-click="tab = 0">Home</a></li>
+        <li><a href ng-click="tab = 1">Library</a></li>
+        <li><a href ng-click="tab = 0">Data</a></li>
+      </ol>
+      {{ announcements[tab].message }}
+    </section>
+  </div>
 
 <div class="btn-group">
-  <button type="button" class="btn btn-primary">Sort</button>
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu">
-    <li><a href="#">action</a></li>
+    <li><a href="#">Action</a></li>
     <li><a href="#">Another action</a></li>
     <li><a href="#">Something else here</a></li>
     <li role="separator" class="divider"></li>

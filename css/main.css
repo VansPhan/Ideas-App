@@ -5,12 +5,15 @@
     margin-left: 25px;
 }
 
-.announcement {
+.jumbotron {
+  	margin-left: -25px;
 	border: 1px dotted black;
-	width: 700px;
-	margin: 0 auto;
-	padding: 25px;
 }
+
+.breadcrumb {
+	background-color: inherit;
+}
+
 
 .btn-group {
 	margin: 25px;
