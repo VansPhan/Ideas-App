@@ -14,5 +14,10 @@ angular.module('ideas')
 	.when('/login', {
 		redirectTo: '/'
 	})
+	.when('/home', {
+		templateUrl: '/templates/pages/home/index.html',
+		controller: 'HomeController',
+		controllerAs: 'homeCtrl'
+	})
 	.otherwise( {redirectTo: '/' });
 });

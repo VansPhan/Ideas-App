@@ -5,6 +5,18 @@
     margin-left: 25px;
 }
 
+.announcement {
+	border: 1px dotted black;
+	width: 700px;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+.btn-group {
+	margin: 25px;
+	margin-left: 500px;
+}
+
 form {
 	width: 400px;
 }
