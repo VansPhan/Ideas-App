@@ -1,5 +1,5 @@
-angular.module('Ideas')
-.config(function($routeProvider, $locationProvider) {
+angular.module('ideas')
+.config(function ($routeProvider, $locationProvider) {
 	$routeProvider.when('/login', {
 		templateUrl: '/templates/pages/login/index.html'
 	})
