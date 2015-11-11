@@ -1,7 +1,9 @@
 angular.module('ideas')
 .config(function ($routeProvider, $locationProvider) {
-	$routeProvider.when('/login', {
-		templateUrl: '/templates/pages/login/index.html'
+	$routeProvider.when('/', {
+		templateUrl: '/templates/pages/login/index.html',
+		controller: 'LoginController',
+		controllerAs: 'loginCtrl'
 	})
 	.when('/fail-login', {
 		templateUrl: '/templates/pages/login/fail-login.html'
@@ -9,8 +11,8 @@ angular.module('ideas')
 	.when('/inactive-user', {
 		templateUrl: '/templates/pages/user/inactive-user.html'
 	})
-	.when('/', {
-		templateUrl: '/templates/pages/login/index.html'
+	.when('/login', {
+		redirectTo: '/'
 	})
 	.otherwise( {redirectTo: '/' });
 });
