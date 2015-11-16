@@ -10,6 +10,9 @@ angular.module('ideas')
 			};
 		});
 	};
+	$scope.update = function() {
+		
+	};
 	$http({ method: 'GET', url: 'http://localhost/ideas-webservices/api/users' }).success(function(data) {
 		$scope.users = data;
 		console.log($scope.users);
