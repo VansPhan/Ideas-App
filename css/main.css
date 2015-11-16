@@ -3,6 +3,22 @@
     src: url('glyphicons-halflings-regular.ttf') format('truetype');
 }
 
+/*MAIN*/
+
+body {
+	padding-top: 70px;
+}
+
+.container {
+	margin: 0 auto;
+    margin-top: 100px;
+}
+
+.navbar-header img {
+	width: 50%;
+	margin: 0 auto;
+}
+
 /*POSTS*/
 
 .post {
@@ -33,12 +49,35 @@ small {
 	float: right;
 }
 
-.container {
-    text-align: center;
-    width: 100%;
+/*LOGIN*/
+
+.failLoginMsg, .inactiveUserMsg {
+	display: table;
+    margin: 0 auto;
     margin-top: 100px;
-    margin-left: 25px;
+    padding: 20px;
+    border: 1px dotted black;
 }
+
+.failLoginMsg a, .inactiveUserMsg a {
+	margin-left: 20px;
+	float: right;
+}
+
+.login {
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid black;
+	padding: 100px;
+}
+
+
+form {
+	width: 400px;
+	margin: 0 auto;
+}
+
+/*HOME*/
 
 .jumbotron {
   	margin-left: -25px;
@@ -59,49 +98,6 @@ small {
 	margin-left: 500px;
 }
 
-form {
-	width: 400px;
-}
-
-body {
-	padding-top: 70px;
-}
-
-.navbar-header img {
-	width: 50%;
-	margin: 0 auto;
-}
-
-.failLoginMsg, .inactiveUserMsg {
-	display: table;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 20px;
-    border: 1px dotted black;
-}
-
-.failLoginMsg a, .inactiveUserMsg a {
-	margin-left: 20px;
-	float: right;
-}
-
-.login {
-	display: table-cell;
-	position: relative;
-	width: 50%;
-	overflow: hidden;
-	border: 1px solid black;
-	padding: 100px;
-}
-
-.register {
-	display: table-cell;
-	position: relative;
-	width: 50%;
-	overflow: hidden;
-	border: 1px solid black;
-	padding: 100px;
-}
 
 
 
