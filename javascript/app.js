@@ -1,1 +1,1 @@
-angular.module('ideas', ['ngRoute']);
+angular.module('ideas', ['ngRoute', 'ui.bootstrap']);

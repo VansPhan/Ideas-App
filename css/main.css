@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'glyphicons-halflings-regular';
+    src: url('glyphicons-halflings-regular.ttf') format('truetype');
+}
+
+.btn {
+	margin: 10px;
+}
+
 .container {
     text-align: center;
     width: 100%;
