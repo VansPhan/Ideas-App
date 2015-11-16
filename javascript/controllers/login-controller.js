@@ -5,8 +5,7 @@ angular.module('ideas')
 		angular.forEach($scope.users, function(val, key) {
 			if (val['email'] == email) {
 				console.log("It match!");
-			};
-			else {
+			} else {
 				console.log("No match");
 			};
 		});
