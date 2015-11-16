@@ -19,5 +19,8 @@ angular.module('ideas')
 		controller: 'HomeController',
 		controllerAs: 'homeCtrl'
 	})
+	.when('', {
+		redirectTo: '/'
+	})
 	.otherwise( {redirectTo: '/' });
 });
