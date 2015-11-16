@@ -1,17 +1,15 @@
 angular.module('ideas')
 .controller('LoginController', function($http, $scope) {
+	$scope.mainUser;
 	$scope.users;
 	$scope.login = function(email) {
 		angular.forEach($scope.users, function(val, key) {
 			if (val['email'] == email) {
-				console.log("It match!");
+				$location.path('/home');
 			} else {
-				console.log("No match");
+				$location.path('/fail-login');
 			};
 		});
-	};
-	$scope.update = function() {
-		
 	};
 	$http({ method: 'GET', url: 'http://localhost/ideas-webservices/api/users' }).success(function(data) {
 		$scope.users = data;
