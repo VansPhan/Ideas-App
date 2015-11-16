@@ -5,4 +5,5 @@ angular.module('ideas-services', ['ngResource']).
       post: {method:'POST'},
       update: {method:'PUT'},
       remove: {method:'DELETE'}
-    });
+  	});
+   });
