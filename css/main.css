@@ -10,6 +10,10 @@
 	border: 1px dotted black;
 }
 
+.homePosts {
+	margin-bottom: 100px;
+}
+
 .breadcrumb {
 	background-color: inherit;
 }
