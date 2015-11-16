@@ -3,8 +3,34 @@
     src: url('glyphicons-halflings-regular.ttf') format('truetype');
 }
 
-.btn {
-	margin: 10px;
+/*POSTS*/
+
+.post {
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.post article {
+	/*border: 1px dotted black;*/
+	padding: 20px;
+	margin: 5px;
+}
+
+.post-date {
+	float: right;
+}
+
+.post-user-id {
+	float: left;
+}
+
+.post-title {
+	text-align: left;
+}
+
+small {
+	float: right;
 }
 
 .container {

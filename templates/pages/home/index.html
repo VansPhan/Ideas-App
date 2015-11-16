@@ -4,27 +4,33 @@
       <ol class="breadcrumb">
         <li><a href ng-click="tab = 0">Home</a></li>
         <li><a href ng-click="tab = 1">Library</a></li>
-        <li><a href ng-click="tab = 2">Data</a></li>
       </ol>
       {{ announcements[tab].message }}
     </section>
   </div>
 
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+ <div class="btn-group" uib-dropdown>
+      <button id="split-button" type="button" class="btn btn-default">Sort</button>
+      <button type="button" class="btn btn-default" uib-dropdown-toggle>
+        <span class="caret"></span>
+        <span class="sr-only">Split button!</span>
+      </button>
+      <ul class="uib-dropdown-menu" role="menu" aria-labelledby="split-button">
+        <li role="menuitem"><a href="#">Action</a></li>
+        <li role="menuitem"><a href="#">Another action</a></li>
+        <li role="menuitem"><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li role="menuitem"><a href="#">Separated link</a></li>
+      </ul>
+    </div>
 <div class="homePosts">
 <div ng-repeat="post in posts | limitTo : 10"> 
-{{ post.message }}
+  <div class="post">
+    <hr>
+    <h1 class="post-title">{{ post.title }} <small>{{ post.time_remaining }} Days Left</small></h1>
+    <p class="post-title">Vote Count: {{ post.vote_count }}</p>
+    <article>{{ post.description | limitTo: 250 }}..</article>
+    <span class="post-user-id">{{ post.user_id }}</span>
+    <span class="post-date">{{ post.date }} / {{ post.comment_count }} Comments</span>
+  </div>
 </div>
