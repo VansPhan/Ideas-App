@@ -77,6 +77,10 @@ form {
 	margin: 0 auto;
 }
 
+.email_field {
+	margin: 10px;
+}
+
 /*HOME*/
 
 .jumbotron {

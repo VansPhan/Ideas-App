@@ -1,14 +1,19 @@
 angular.module('ideas')
-.controller('LoginController', function($http, $scope) {
+.controller('LoginController', function($http, $scope, $location) {
 	$scope.mainUser;
 	$scope.users;
 	$scope.login = function(email) {
-		angular.forEach($scope.users, function(val, key) {
-			if (val['email'] == email) {
-				$location.path('/home');
-			} else {
-				$location.path('/fail-login');
-			};
+		for (var i = 0; i < $scope.users.length; i++) {
+			console.log($scope.users[i]);
+		};
+		// 	switch(email) {
+		// 		case 
+		// 	}
+		// 	if (val['email'] == email) {
+		// 		$location.path('/home');
+		// 	} else {
+		// 		$location.path('/fail-login');
+		// 	};
 		});
 	};
 	$http({ method: 'GET', url: 'http://localhost/ideas-webservices/api/users' }).success(function(data) {
