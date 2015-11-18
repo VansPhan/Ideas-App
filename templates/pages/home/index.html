@@ -2,8 +2,8 @@
     <h1>Announcement</h1> 
     <section ng-init="tab = 0">
       <ol class="breadcrumb">
-        <li><a href ng-click="tab = 0"><span class="glyphicons glyphicons-circle-arrow-left"></span></a></li>
-        <li><a href ng-click="tab = 1"></a></li>
+        <li><a href ng-click="tab = 0"><img ng-src="img/left_arrow.png" alt="left_arrow.png" /></a></li>
+        <li><a href ng-click="tab = 1"><img ng-src="img/right_arrow.png" alt="right_arrow.png" /></a></li>
       </ol>
       {{ announcements[tab].message }}
     </section>
