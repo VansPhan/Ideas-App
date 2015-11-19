@@ -1,6 +1,6 @@
 angular.module('ideas')
 .controller('LoginController', function($http, $scope, $location) {
-	$scope.users = dummy_users;
+	$scope.users;
 	$scope.login = function(email) {
 		if ($scope.users.length == undefined) {
 			if ($scope.users['email'] == email) {
@@ -20,10 +20,10 @@ angular.module('ideas')
 		};
 	};
 
-	// $http({ method: 'GET', url: 'http://localhost:8080/ideas-webservices/api/users/1' }).success(function(data) {
-	// 	$scope.users = data;
-	// 	console.log($scope.users);
-	// });
+	$http({ method: 'GET', url: 'http://localhost:8080/ideas-webservices/api/users' }).success(function(data) {
+		$scope.users = data;
+		console.log($scope.users);
+	});
 });
 
 
