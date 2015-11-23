@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 f21118cf6c01e6bfcbea88c2beffc6496746a422 Van Phan <VanPhan514@gmail.com> 1447807154 -0500	clone: from https://github.com/VansPhan/Ideas-App.git
+f21118cf6c01e6bfcbea88c2beffc6496746a422 c5f80ccc4fadf98926965f467befae5e30fef224 Van Phan <VanPhan514@gmail.com> 1447817378 -0500	commit: Removed .ttf file and added dummy data to test login controller
+c5f80ccc4fadf98926965f467befae5e30fef224 eda64c085cd0ed3b46a6cdd5f7224c05e7ba28c0 Van Phan <VanPhan514@gmail.com> 1447820197 -0500	commit: Login controller email check and redirect is complete
+eda64c085cd0ed3b46a6cdd5f7224c05e7ba28c0 15e97780024601fe29b29ccf57d4cceeec9c76a4 Van Phan <VanPhan514@gmail.com> 1447884956 -0500	pull --progress --rebase --prune origin master: checkout 15e97780024601fe29b29ccf57d4cceeec9c76a4
+15e97780024601fe29b29ccf57d4cceeec9c76a4 15e97780024601fe29b29ccf57d4cceeec9c76a4 Van Phan <VanPhan514@gmail.com> 1447884957 -0500	rebase finished: returning to refs/heads/master
+15e97780024601fe29b29ccf57d4cceeec9c76a4 7ac3a478d814583d40a484770c5c490eac9202cd Van Phan <VanPhan514@gmail.com> 1447905267 -0500	commit: Changed link to api in login controller
+7ac3a478d814583d40a484770c5c490eac9202cd 60a7e4135df58551f8ec2ee554edb2ca7cdb01aa Van Phan <VanPhan514@gmail.com> 1448303607 -0500	commit: Made separate files for services and directives
+60a7e4135df58551f8ec2ee554edb2ca7cdb01aa 206c0998247089f6e940a683fd550f61a03145e7 Van Phan <VanPhan514@gmail.com> 1448316366 -0500	commit: Fixed injector issue and added login.js file
+206c0998247089f6e940a683fd550f61a03145e7 04725c1507ffaff80790a2967455d2815497a037 Van Phan <VanPhan514@gmail.com> 1448318462 -0500	commit: svn

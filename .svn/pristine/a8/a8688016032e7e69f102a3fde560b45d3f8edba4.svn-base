@@ -25,10 +25,12 @@
 	<!-- Javascript -->
 	<script src="javascript/app.js"></script>
 	<script src="javascript/routes.js"></script>
-  	<script src="javascript/directives.js"></script>
-  	<script src="javascript/services.js"></script>
+  	<script src="javascript/directives/components/nav-bar.js"></script>
+  	<script src="javascript/services/account.js"></script>
 	<script src="javascript/controllers/login-controller.js"></script>
 	<script src="javascript/controllers/home-controller.js"></script>
+	<script src="javascript/js/login.js"></script>
+
 
 
 </body>
