@@ -1,8 +1,9 @@
-angular.module('ideas-services', [])
-.factory('account', ['$http', function accountFactory($http) {
-  return {
-    all: function() {
-      return $http({ method: 'GET', url: 'http://localhost:8080/ideas-webservices/api/users' });
-    }
-  };
-}]);
+angular.module('ideas-services', ['ngResource']).
+    factory('ideasCall', function($resource){
+    return $resource('http://localhost\\:3000/realmen/:entryId', {}, {
+      query: {method:'GET', params:{entryId:''}, isArray:true},
+      post: {method:'POST'},
+      update: {method:'PUT'},
+      remove: {method:'DELETE'}
+  	});
+   });
