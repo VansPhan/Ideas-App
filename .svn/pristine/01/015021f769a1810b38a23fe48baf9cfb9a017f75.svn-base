@@ -1,0 +1,107 @@
+/*MAIN*/
+
+body {
+	padding-top: 70px;
+}
+
+.container {
+	margin: 0 auto;
+    margin-top: 100px;
+}
+
+.navbar-header img {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/*POSTS*/
+
+.post {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.post article {
+	/*border: 1px dotted black;*/
+	padding: 20px;
+	margin: 5px;
+}
+
+.post-date {
+	float: right;
+}
+
+.post-user-id {
+	float: left;
+}
+
+.post-title {
+	text-align: left;
+}
+
+small {
+	float: right;
+}
+
+/*LOGIN*/
+
+.failLoginMsg, .inactiveUserMsg {
+	display: table;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px dotted black;
+}
+
+.failLoginMsg a, .inactiveUserMsg a {
+	margin-left: 20px;
+	float: right;
+}
+
+.login {
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid black;
+	padding: 100px;
+}
+
+
+form {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.email_field {
+	margin: 10px;
+}
+
+/*HOME*/
+
+.jumbotron {
+	text-align: center;
+	margin: 0 auto;
+	border: 1px dotted black;
+	padding: 30px;
+}
+
+.homePosts {
+	margin-bottom: 100px;
+}
+
+.breadcrumb {
+	background-color: inherit;
+}
+
+.breadcrumb img {
+	width: 50px;
+	height: 50px;
+}
+
+
+.btn-group {
+	margin: 25px;
+	float: right;
+}
+
