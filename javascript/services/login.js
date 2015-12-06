@@ -1,5 +1,5 @@
-angular.module('login-services', [])
-.factory('login', ['$scope', function loginFactory($scope) {
+angular.module('ideas')
+.factory('login', function($scope) {
   return {
     redirect: function(email) {
 		if ($scope.users.length == undefined) {
@@ -20,4 +20,4 @@ angular.module('login-services', [])
 		};
 	}
   };
-}]);
+});
