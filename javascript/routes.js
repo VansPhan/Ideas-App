@@ -19,6 +19,11 @@ angular.module('ideas')
 		controller: 'HomeController',
 		controllerAs: 'homeCtrl'
 	})
+	.when('/edit-announcements', {
+		templateUrl: '/templates/pages/announcements/index.html',
+		controller: 'AnnouncementsController',
+		controllerAs: 'announcementsCtrl'
+	})
 	.when('', {
 		redirectTo: '/'
 	})

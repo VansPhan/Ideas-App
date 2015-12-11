@@ -105,3 +105,35 @@ form {
 	float: right;
 }
 
+/*Announcement*/
+
+.btn-primary{
+  size:50px;
+  background-image: linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
+}
+.editAnnouncement, .editAnnouncementMob{
+  margin: auto;
+  border:1px solid black;
+  padding: 50px;
+  text-align: center;
+}
+#cancelBtn, #deleteBtn{
+  margin-right:15px;
+}
+#cancelBtnMob, #deleteBtnMob{
+  margin-bottom:15px;
+}
+#aLabelTxt {
+  vertical-align:top;
+  padding-right:10px;
+}
+#AnnounTable, #AnnounProps, #AnnounActions{
+  margin: 0px auto;
+}
+#AnnounTableMob, #AnnounPropsMob, #AnnounActionsMob{
+  margin: 0px auto;
+  
+}
+#AnnounCreateDt {
+  text-align:center;
+}

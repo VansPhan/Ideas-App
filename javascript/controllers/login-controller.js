@@ -22,12 +22,16 @@ angular.module('ideas')
 				};
 			};
 		};
+		account.gmail(email, "new_first_name", "new_last_name")
+		.success(function(data) {
+		console.log(data);
+	});
 	};
 	$scope.email_validation = function(email) {
 		var regex = /^[A-Za-z0-9._%+-]+@wwindtech.com$/;
 		return regex.test(email);
 	};
-	account.all()
+	account.users()
 	.success(function(data) {
 		$scope.users = data;
 		console.log($scope.users);
