@@ -1,0 +1,52 @@
+  <div class="editAnnouncement">
+    <p>
+      <b>Edit Anouncement {{Announcement.Name}}.</b>
+    </p>
+    <table id="AnnounTable">
+      <tbody>
+        <tr>
+          <td id="aLabelTxt">Announcement Text:</td>
+          <td>
+            <textarea id="FillAnnounce" rows="5" cols="50"></textarea>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="AnnounCreateDt">Date Created: {{announcement.dateCreated}}</div>
+    <br />
+    <table id="AnnounProps">
+      <tbody>
+        <tr>
+          <td>Start Time:</td>
+          <td id="StartDate">
+            <input type="date" />
+          </td>
+          <td id="StartHr">
+            <input type="time" />
+          </td>
+        </tr>
+        <tr>
+          <td>End Time:</td>
+          <td id="EndDate">
+            <input type="date" />
+          </td>
+          <td id="EndTime">
+            <input type="time" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table id="AnnounActions">
+      <tbody>
+        <tr>
+          <td>
+            <button type="reset" id="cancelBtn" class="btn btn-primary">Cancel</button></td>
+          <td>
+            <button type="submit" id="deleteBtn" formmethod="post" class="btn btn-primary">Delete</button></td>
+          <td>
+            <button type="sumbit" id="saveBtn" formmethod="post" class="btn btn-primary">Save</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
