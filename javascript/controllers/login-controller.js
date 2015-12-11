@@ -18,14 +18,16 @@ angular.module('ideas')
 						$location.path('/home');
 						break;
 				} else {
+					if ((i + 1) == $scope.users.length) {
+						account.gmail(email, "new_first_name", "new_last_name")
+							.success(function(data) {
+							console.log(data);
+						});
+					};
 					$location.path('/fail-login');
 				};
 			};
 		};
-		account.gmail(email, "new_first_name", "new_last_name")
-		.success(function(data) {
-		console.log(data);
-	});
 	};
 	$scope.email_validation = function(email) {
 		var regex = /^[A-Za-z0-9._%+-]+@wwindtech.com$/;
