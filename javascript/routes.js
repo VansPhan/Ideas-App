@@ -11,6 +11,9 @@ angular.module('ideas')
 	.when('/inactive-user', {
 		templateUrl: '/templates/pages/user/inactive-user.html'
 	})
+	.when('/manage-user', {
+		templateUrl: '/templates/pages/user/manage-user.html'
+	})
 	.when('/login', {
 		redirectTo: '/'
 	})
