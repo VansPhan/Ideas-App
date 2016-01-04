@@ -12,12 +12,10 @@
 </div>
 
 <div ng-repeat="user in users | limitTo : 10"> 
-  <div class="post">
-    <hr>
-    <h1 class="post-title">{{ post.title }} <small>{{ post.time_remaining }} Days Left</small></h1>
-    <p class="post-title">Vote Count: {{ post.vote_count }}</p>
-    <article>{{ post.description | limitTo: 250 }}..</article>
-    <span class="post-user-id">{{ post.user_id }}</span>
-    <span class="post-date">{{ post.date }} / {{ post.comment_count }} Comments</span>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">{{ user.firstName }} {{ user.lastName }}</div>
+      <div class="col-md-4">{{ user.email }}</div>
+    </div>
   </div>
 </div>
